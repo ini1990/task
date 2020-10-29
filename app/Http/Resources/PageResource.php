@@ -21,6 +21,7 @@ class PageResource extends JsonResource
             'title' => $this->title,
             'description' => $this->description,
             'content' => $this->content,
+            'status' => $this->status,
             'category_id' => $this->category_id,
         ];
     }

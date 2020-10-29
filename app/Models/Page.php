@@ -21,6 +21,7 @@ class Page extends Model
         'title',
         'description',
         'content',
+        'status',
         'category_id',
     ];
 

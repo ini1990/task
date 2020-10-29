@@ -21,6 +21,7 @@ class CreatePagesTable extends Migration
             $table->string('title', 100);
             $table->text('description');
             $table->longText('content');
+            $table->enum('status', ["on","off"]);
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->softDeletes();
             $table->timestamps();

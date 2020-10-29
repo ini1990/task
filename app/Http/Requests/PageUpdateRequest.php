@@ -28,6 +28,7 @@ class PageUpdateRequest extends FormRequest
             'title' => ['required', 'string', 'max:100'],
             'description' => ['required', 'string'],
             'content' => ['required', 'string'],
+            'status' => ['required', 'in:on,off'],
             'category_id' => ['required', 'integer', 'exists:categories,id'],
         ];
     }

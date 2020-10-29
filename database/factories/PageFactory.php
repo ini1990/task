@@ -27,6 +27,7 @@ class PageFactory extends Factory
             'title' => $this->faker->sentence(4),
             'description' => $this->faker->text,
             'content' => $this->faker->paragraphs(3, true),
+            'status' => $this->faker->randomElement(["on","off"]),
             'category_id' => Category::factory(),
         ];
     }
