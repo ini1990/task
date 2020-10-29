@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::apiResource('page', App\Http\Controllers\PageController::class);
+
+Route::apiResource('category', App\Http\Controllers\CategoryController::class);
